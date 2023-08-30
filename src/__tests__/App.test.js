@@ -10,7 +10,7 @@ import { act } from 'react-dom/test-utils';
 import App from '../App';
 
 describe('renders the app', () => {
-  // mocks the fetch API used on the stats page and the about page.
+  // mocks the fetch API used on the visuals page and the about page.
   const jsonMock = jest.fn(() => Promise.resolve({}));
   const textMock = jest.fn(() => Promise.resolve(''));
   global.fetch = jest.fn(() => Promise.resolve({
@@ -41,7 +41,7 @@ describe('renders the app', () => {
   });
 
   it('should render the title', async () => {
-    expect(document.title).toBe("Michael D'Angelo");
+    expect(document.title).toBe("KENSTATE ALLIED");
   });
 
   it('can navigate to /about', async () => {
@@ -59,15 +59,15 @@ describe('renders the app', () => {
     expect(textMock).toHaveBeenCalledTimes(1);
   });
 
-  it('can navigate to /resume', async () => {
+  it('can navigate to /expertise', async () => {
     expect.assertions(3);
     const contactLink = document.querySelector('#header > nav > ul > li:nth-child(2) > a');
     expect(contactLink).toBeInTheDocument();
     await act(async () => {
       await contactLink.click();
     });
-    expect(document.title).toContain('Resume |');
-    expect(window.location.pathname).toBe('/resume');
+    expect(document.title).toContain('Expertise |');
+    expect(window.location.pathname).toBe('/expertise');
   });
 
   it('can navigate to /projects', async () => {
@@ -81,15 +81,15 @@ describe('renders the app', () => {
     expect(window.location.pathname).toBe('/projects');
   });
 
-  it('can navigate to /stats', async () => {
+  it('can navigate to /visuals', async () => {
     expect.assertions(5);
     const contactLink = document.querySelector('#header > nav > ul > li:nth-child(4) > a');
     expect(contactLink).toBeInTheDocument();
     await act(async () => {
       await contactLink.click();
     });
-    expect(document.title).toContain('Stats |');
-    expect(window.location.pathname).toBe('/stats');
+    expect(document.title).toContain('Visuals |');
+    expect(window.location.pathname).toBe('/visuals');
     expect(global.fetch).toHaveBeenCalledTimes(1);
     expect(jsonMock).toHaveBeenCalledTimes(1);
   });

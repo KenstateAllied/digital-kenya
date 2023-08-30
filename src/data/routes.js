@@ -1,24 +1,24 @@
 const routes = [
   {
     index: true,
-    label: "Michael D'Angelo",
+    label: 'KENSTATE ALLIED',
     path: '/',
   },
   {
-    label: 'About',
-    path: '/about',
+    label: 'Company',
+    path: '/Company',
   },
   {
-    label: 'Resume',
-    path: '/resume',
+    label: 'Expertise',
+    path: '/expertise',
   },
   {
     label: 'Projects',
     path: '/projects',
   },
   {
-    label: 'Stats',
-    path: '/stats',
+    label: 'Visuals',
+    path: '/visuals',
   },
   {
     label: 'Contact',

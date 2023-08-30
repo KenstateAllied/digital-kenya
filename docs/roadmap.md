@@ -6,10 +6,10 @@ This site has been a work in progress since 2014. I have tried to make updates t
 
 ### Improvements
 
-- use JSON resume instead of reinventing the wheel (perform literature search for wiki data resume standard).
+- use JSON expertise instead of reinventing the wheel (perform literature search for wiki data expertise standard).
 - Fix navbar (use nav provided by template) -> Reduce Bundle size.
 - Separate concerns better in src/data. Some files are data, others are template variables.
-- Get better at redefining duplicate types. They are especially prevalent in resume components.
+- Get better at redefining duplicate types. They are especially prevalent in resu components.
 - Make code splitting better - some bundles are under 1KB.
 - Make styles more modular.
 - Make FA integration less terrible (consider building FA library).

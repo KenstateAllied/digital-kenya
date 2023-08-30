@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
-import Education from '../components/Resume/Education';
-import Experience from '../components/Resume/Experience';
-import Skills from '../components/Resume/Skills';
-import Courses from '../components/Resume/Courses';
-import References from '../components/Resume/References';
+import Education from '../components/Expertise/Education';
+import Experience from '../components/Expertise/Experience';
+import Skills from '../components/Expertise/Skills';
+import Courses from '../components/Expertise/Courses';
+import References from '../components/Expertise/References';
 
-import courses from '../data/resume/courses';
-import degrees from '../data/resume/degrees';
-import work from '../data/resume/work';
-import { skills, categories } from '../data/resume/skills';
+import courses from '../data/expertise/courses';
+import degrees from '../data/expertise/degrees';
+import work from '../data/expertise/work';
+import { skills, categories } from '../data/expertise/skills';
 
 // NOTE: sections are displayed in order defined.
 const sections = {
@@ -23,15 +23,15 @@ const sections = {
   References: () => <References />,
 };
 
-const Resume = () => (
+const Expertise = () => (
   <Main
-    title="Resume"
-    description="Michael D'Angelo's Resume. Smile Identity, Arthena, Matroid, YC, Skeptical Investments, Stanford ICME, Planet, and Facebook."
+    title="Expertise"
+    description="Kenstate Allied's Portfolio. Smile Identity, Arthena, Matroid, YC, Skeptical Investments, Stanford ICME, Planet, and Facebook."
   >
-    <article className="post" id="resume">
+    <article className="post" id="expertise">
       <header>
         <div className="title">
-          <h2><Link to="resume">Resume</Link></h2>
+          <h2><Link to="expertise">Expertise</Link></h2>
           <div className="link-container">
             {Object.keys(sections).map((sec) => (
               <h4 key={sec}>
@@ -47,4 +47,4 @@ const Resume = () => (
   </Main>
 );
 
-export default Resume;
+export default Expertise;

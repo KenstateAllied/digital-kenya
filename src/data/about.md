@@ -70,7 +70,7 @@ Ask me in person for other stories that I'm afraid to share with the internet.
 - I can't locate every country on a map.
 - I operate a [small angel fund](http://skepticalinvestments.biz/) with terrible returns.
 - I break about 30 traffic laws on a [cruiser](https://landyachtz.com/boards/cruiser/), [onewheel](https://onewheel.com/products/xr), [bicycle](https://www.citibikenyc.com/), or [electric skateboard](https://boostedusa.com/collections/electric-skateboards/products/boosted-mini-x) every single day.
-- I added this page because so many people complained that my site was just my resume.
+- I added this page because so many people complained that my site was just my expertise.
 
 # I dream of
 

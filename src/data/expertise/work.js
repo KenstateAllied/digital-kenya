@@ -1,6 +1,6 @@
 /**
  * @typedef {Object} Position
- * Conforms to https://jsonresume.org/schema/
+ * Conforms to https://jsonexpertise.org/schema/
  *
  * @property {string} name - Name of the company
  * @property {string} position - Position title
